@@ -1,0 +1,2 @@
+ret abc
+set str lol = 'x'

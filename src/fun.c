@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include "config.h"
+void fun() {
+HLINE
+printf("*       °#@#####@@@@@@@@@@###OO*°.       o\n");
+printf("*      o@°               ...°*ooO##*     *\n");
+printf("*     ##    ..°°..  .              o@o   *\n");
+printf("*    O@    .°.       °     .         #O  *\n");
+printf("*   °@        .*Oo*°                 .@  *\n");
+printf("*  O@°      O@@@@@o*OO     .#@@@@*    O#.°\n");
+printf("°.@# °#o*** **.o#°oOO@°  °#@@#O°*.    .°@#\n");
+printf("#@° *@..o*oO**OO          °@      OoOO° o@\n");
+printf("@° .@  #@*.         °.     #O  .O#**    o@\n");
+printf("@o .@°O@* *Oo°     @OO**    #@o    @* . @@\n");
+printf("o@o o. .@o  @ooOOo°Oo...  °oO   .°@@@  o@°\n");
+printf("° @@    °@#O@@.   @OoOoo*O@O°*oOO###@  @ °\n");
+printf("*  o@    °@ #@@@@O@.   O#  @O. @*.@@@ .@ *\n");
+printf("*   o@    .@@   °@@@@@@@@@@@@@@@@@@@@ .@ *\n");
+printf("*    ##     *#o  #.  °@@@@@@@@@@@@@@@ .@ *\n");
+printf("*     o@°     *O@@    .O   @ .@ @*@@. °@ *\n");
+printf("*       #@o°    .°oOOo@@**#@*@@O@oo   .@ *\n");
+printf("*        .o#O*..        °°°.°.         @ °\n");
+printf("*           °oO#o°   ...            .  @.°\n");
+printf("*               *O#*                  .@ *\n");
+printf("*                  *O##O*°           o@. *\n");
+printf("*                      .*oO##OooooO##o   *\n");
+HLINE
+// printf("oooooooooooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO######################################@@@");
+// printf("ooooooooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO#########################################\n");
+// printf("oooooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO#############################################\n");
+// printf("oooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO##########################################\n");
+// printf("ooooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOO#####OOOOOOOOOOOO##################################@#####\n");
+// printf("oooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOO#####OOOOOOOOOOOOOOOO#############################@@@@@@@@@\n");
+// printf("ooooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOO#OOOOOoOOOOOOoooooooO###########################@@@@@@@@@@\n");
+// printf("ooooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo******ooooooo**°°°*oO######################@@@@@@@@@@@@@\n");
+// printf("ooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo****°°°°******°°°...°oO##################@##@@###@@@@@@@@\n");
+// printf("oooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOoo*°°***°°°°°°°°°°°°°.   °*O#####################@###@@@@@@@@\n");
+// printf("ooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo**°°°°°...°°°°.....      .*O########################@@@@@@@@\n");
+// printf("ooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo****°°..   ....            °O##########################@@####\n");
+// printf("oooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOoo*°°*°°.    ..             .o################################\n");
+// printf("oooooooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOoo**°°°.....°°°°....°°°°..  °O################################\n");
+// printf("oooooOoOOOOOOOOOOOOOOOOOOOOOOOOOOOOoooOOOoo**°.. .°°°*********°°°. .°O####################@@@@@@@##@@@\n");
+// printf("ooOOOOoOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo***ooo**°°°. .°°°°°****°°°°°. .°o##############@@#@@@@@@@@@@@@@@@\n");
+// printf("oOOOOOoOOOOOOOOOOOOOOOOOOOOOOOOOOOOOooooo******°..°*°°°°°°°°°****°°**o##################@@@@@@@@@@@@@@\n");
+// printf("OooOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO#Oooo*ooo****oooOOOOOooooOOOOOoooOoo######################@@@@@@@@@@\n");
+// printf("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO##Oo***oOooo*ooo**°°oo*°.°oo°...°***o#####################@@@@@@@@@@@\n");
+// printf("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO#####Oo**oooo°..*o*****°°*°°oo*oooo°°oO#####################@@@@@@@@@@@\n");
+// printf("OOOOOOOOOOOOOOOOOOOOOOOOOOOOO########OOOOOoo*°..**oo****°  °*o*°.°°°*O#####@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+// printf("OOOOOOOOOOOOOOOOOOOOOOOOO############OO##Ooo*°.    .°°°°.    °*°. .°o#######################@@@@@@@@@@\n");
+// printf("OOOOOOOOOOOOOOOOOOOOOO##############OO###Oooo*°..°°**°.       .****oO#########OOOO########OO#@@@@@@@@@\n");
+// printf("OOOOOOOOOOOOOOOOO##################OOO###OOOoo***o**°**oo°°**°°°*oooOO##@@@@@@@############O#@@@@@@@@@\n");
+// printf("OOOOOOOOOOOOOOO##########################*.oOOoooooo***********ooooOOOO##@@@@@@@@@@#########O##@@@@@@@\n");
+// printf("OOOOOOOOOOOO##############OOOO###########*  *OOoooOOo*°°°°°°°°*OOOO#OOOO###@@@@@@@@@@@####@#OO##@@@@@@\n");
+// printf("OOOOOOO#################OOOOOO###########O   °OOOooo**°......°oo°.o##OOOO###@@@@@@@@@@#######OOOO##@@@\n");
+// printf("OOOOO################OOOOOOOOOO###########*    *OOOOoooooooooOo   .###OO###@@@@@@@@@@#########OOOOO##@\n");
+// printf("OOO###############OOOOOOOOOOO######OOOOO##o      .*OOOOOOOOOo.     OOOOO###@@@@@@@@@##############O###\n");
+// printf("O##############OOOOOOOOOOOOOOO####OOOOOOOOO°        o######Oo      *oOOOO###########################OO\n");
+// printf("#############OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*       .*OOOOOo°       °*oOOOO##########################OO\n");
+// printf("############OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*          oooo*         °*oOOOOO##########################\n");
+// printf("############OO##OOOOOOOOOOOOOOOOOOOOOOOOOOOo          °ooo.            °oOOOO#########################\n");
+// printf("############OO##OOOOOOOOOOOOOOOOO##OOOOOOOOO.          ooo              .OOOOO################@@@#####\n");
+// printf("#############O##OOOOOOOOOOOOOOOO#####OOOOOOOo          *oo*              °OOOOOO###############@@@####\n");
+// printf("################OOOOOOOOOOOOOOOOO###OOOOOOOOO.         *ooo               °OOOOOO##############@@@####\n");
+// printf("#################OOOOOOOOOOOOOOOO####OO##ooO#O         oooo                *OOOOOO##############@@####\n");
+// printf("O#################OOO#OOOOOOOOOOO########o*OO#o       *Oooo*                oOOOOOO###############@@##\n");
+// printf("OOOO###############O####OOOOOOOOOOO######OoO#OO.      oooooo                 oOOOOO#############@@@@@#\n");
+// printf("OOOOOOO##################OOOOOO#######OOO#OO###.      *o*ooO*                .oOOOO####@@@@####@@@@@@@\n");
+// printf("OOOOOOOOOO################OOOOO########OOOOO###O      ***oooO°                *OOOO####@@@@@@@@@@@@@@@\n");
+// printf("###OOO#OOOO################OOOO############OOOOOo     °oooooO#o.              °OOO#####@@@@###@@@@@@@@\n");
+// printf("############################OOO####OOO##OOOOOOOOO*     oooooO##O°             *O########@#*   .o#@@@@@\n");
+}

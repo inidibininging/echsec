@@ -1,0 +1,36 @@
+    ff func()
+    set str ab = 'x'
+    set str cd = ab
+    if ab = 'abcd'
+        !myFunctionB(lol)
+        Return 'x asdgasdg'
+    end
+    set str lol = abw
+    
+
+    ff func(magic)
+    set str server is 'peter.com'
+    set str port is '80'
+    if server is 'localhost'
+        !buildServer(magic)
+        if port is '80'
+            return 'ok server built on port 80'
+        end
+    end
+    set str magic is 'abw'
+
+    httpsff //youtu.be/yYnX5QodqQ4
+    1A*A*
+    2*B*#AA#*
+    2*C*#AAA#*
+    3*B*#AA#*
+        4B*A*
+        3*C*#AAA#*
+            5*#BBC#*
+        6*
+    6*
+    2*A*#AB#*
+    5*A*
+
+
+    1A*A*2*B*#AA#*2*C*#AAA#*3*B*#AA#*4B*A*3*C*#AAA#*5*#BBC#*6*6*2*A*#AB#*5*A*

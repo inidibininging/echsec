@@ -1,0 +1,23 @@
+ff main (args)
+    set str srv.result is	'nothing'
+	set str srv.host	 is	'localhost'
+	set nr srv.port 	 is	80
+
+	if srv.host eq 'localhost'
+		call buildLocalServer (srv.host, srv.port, srv.result)
+    	if srv.result eq 'ok'
+			call print (test)
+		end
+		call print (srv.result)
+	end
+
+ff buildLocalServer (host, port, result)
+	set str result is 'pending'
+	set str echse_fn is 'print'
+	call print(result)
+	call print(echse_fn)
+
+
+ff print (message)
+	!print (message)
+

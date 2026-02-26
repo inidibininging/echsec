@@ -1,0 +1,28 @@
+ff main (args)
+	set str x is args
+	set str y is x
+	call echo ('hello people', ')this is a second arg')
+	call 1 (args)
+
+ff 2 (_)
+	call echo ('this is two')
+	call 3 (_)
+
+ff 1 ( _)
+	call echo ( 'this is one')
+	call 2 ( _)
+
+ff 3 ( _)
+	call echo ( 'this is three')
+	set str x is 'somethin'
+	if x equals 'somethin'
+		if x equals 'no-somethin'
+			thing str x becomes 'ERROR'
+			call print ( 'THIS IS AN ', 'ERROR')
+		end
+		thing str x is 'done'
+	end
+	if x equals 'done'
+		set str x is 'really'
+		call echo ( 'really really')
+	end

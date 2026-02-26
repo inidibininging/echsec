@@ -1,0 +1,28 @@
+ff A(xxx)
+    set str duck is 'suck'
+    ret duck
+    
+ff main(args)
+    set str ab is 'x'
+    set str cd is ab
+    if ab eq 'x'
+        if cd eq 't'
+            now str cd is 'on'
+        end
+        if cd eq 'on'
+            
+        end
+        if ab eq 'abcd'
+            !myFunctionB(lol)
+            back 'x asdgasdg'
+        end
+    end
+    now str lol is x
+
+ff myFunctionB(someVar) 
+    now str xxx is 'CaPtAiN Jack SPARROW'
+    call Lol(xxx)
+
+ff Lol(xxx)
+    call A(xxx)    
+    

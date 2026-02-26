@@ -1,0 +1,4 @@
+
+ff main(mainarg)
+    !print('starting main')
+    !print('this is dog')

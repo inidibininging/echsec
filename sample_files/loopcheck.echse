@@ -1,0 +1,5 @@
+lets main with nothing!
+	say thing srv.result is 'nothing'
+	go test with srv.result!
+
+lets test with something!	

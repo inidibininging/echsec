@@ -1,0 +1,37 @@
+ff
+main(args, a)
+    call html(args)
+	set str haystack is 'hello x world'
+    set str needle is 'world'    
+    set str out_value is ' '
+    set nr FALSE is 0
+    call cut(haystack, needle, out_value, FALSE)
+
+    set ref out_value is cut out
+    !print('...aaand the winner is:', out_value)
+
+ff
+html(my_content)
+    !print('<html>',
+        '<script>alert("', my_content ,'");</script>',
+        '</html>')
+
+ff 
+cut(haystack, needle, out, dbug)
+    set nr needle_start is 0
+    set nr one is 1
+    set nr needle_idx is 0
+    !pos(needle, haystack, needle_idx)
+    if dbug eq '1'
+        !print('needle_start:', needle_start)
+        !print('needle_idx:', needle_idx)
+    end
+    if haystack contains needle
+        if dbug eq '1'
+            !print('needle found in haystack!')
+        end
+        !substr(needle_start, needle_idx, haystack, out)
+        if dbug eq '1'
+            !print('haystack:', haystack)
+        end
+    end

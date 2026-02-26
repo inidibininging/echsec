@@ -1,0 +1,16 @@
+lets start_here with args!
+say thing some_result is 'nothing' 
+say thing the_host is 'example.com'
+say thing mailbox is '80'
+if the_host equals 'localhost' 
+	go build_local_server with the_host, mailbox, some_result!
+	if some_result equals 'ok' go print with test! thatsit
+	go print with some_result !
+thatsit
+
+lets build_local_server with host, port, result!
+say thing result is 'pending'
+look for bind with host, port, result!
+
+lets print with message!
+look for print with message!

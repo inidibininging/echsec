@@ -1,0 +1,12 @@
+ff main(args)
+    st bx srv.result is args
+    cf stbxartshere(args)
+
+ff stbxartshere (args)
+	st bx txt is 'hello x world'
+    st nr pos is -1
+    st bx needle is 'world'
+    #pos(needle, txt, pos)
+    #insert(txt, txt, pos)
+    #print(pos)
+    

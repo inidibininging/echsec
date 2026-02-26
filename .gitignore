@@ -1,3 +1,4 @@
+# ---> C
 # Prerequisites
 *.d
 
@@ -35,6 +36,7 @@
 *.i*86
 *.x86_64
 *.hex
+echsec
 
 # Debug files
 *.dSYM/
@@ -51,5 +53,16 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# debug information files
-*.dwo
+# VSCode Stuff
+.vscode/
+*.log
+
+#node
+noderunner/node_modules/
+net/127-0-0-1
+net/http
+main.html
+main.js
+main.wasm
+main.data
+src/build/Debug/outDebug

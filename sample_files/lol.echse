@@ -1,0 +1,225 @@
+ff reg (_)
+    st bx tv is '1'
+    st bx fv is '0'
+
+ff and (a, b)
+    st rf result is reg fv
+    st rf _1 is reg tv
+    if a eq _1
+        if b eq _1
+            st bx result is _1
+        oif
+    oif
+
+ff or (a, b)
+    st rf result is reg fv
+    st rf _1 is reg tv
+
+    if a eq _1
+        st bx result is _1
+    oif
+    if b eq _1
+        st bx result is _1
+    oif
+
+ff xor (a, b)
+    cf or (a, b)
+    st rf result is or result
+
+    cf and (a, b)
+    st rf result is and result
+
+    cf not (result)
+    st rf result is not result
+
+ff not (a)
+    st bx result is ' '
+    st rf _0 is reg fv
+    st rf _1 is reg tv
+
+    if a eq _1
+        st bx result is _0
+    oif
+
+    if a eq _0
+        st bx result is _1
+    oif
+
+
+ff dinc (n)
+    st bx result is n
+    st bx rc is '0'
+
+    if n eq '8'
+        st bx result is '9'
+        st bx rc is '0'
+    oif
+
+    if n eq '7'
+        st bx result is '8'
+        st bx rc is '0'
+    oif
+
+    if n eq '6'
+        st bx result is '7'
+        st bx rc is '0'
+    oif
+
+    if n eq '5'
+        st bx result is '6'
+        st bx rc is '0'
+    oif
+
+    if n eq '4'
+        st bx result is '5'
+        st bx rc is '0'
+    oif
+
+    if n eq '3'
+        st bx result is '4'
+        st bx rc is '0'
+    oif
+
+    if n eq '2'
+        st bx result is '3'
+        st bx rc is '0'
+    oif
+
+    if n eq '1'
+        st bx result is '2'
+        st bx rc is '0'
+    oif
+
+    if n eq '0'
+    st bx result is '1'
+    st bx rc is '0'
+    oif
+
+    if n eq '9'
+    st bx result is '0'
+    st bx rc is '1'
+    oif
+
+
+ff impl (_)
+    cf reg (_)
+    st rf t is reg tv
+    st rf f is reg fv
+    st bx nrs is '0'
+
+    cf and (f, t)
+    st rf and_res is and result
+# print ('and result of 0-1: ', and_res)
+
+    cf and ( t, f)
+    st rf and_res is and result
+# print ('and result of 1-0: ', and_res)
+
+    cf and (f, f)
+    st rf and_res is and result
+# print ('and result of 0-0: ', and_res)
+
+    cf and (t, t)
+    st rf and_res is and result
+# print ('and result of 1-1: ', and_res)
+
+# print ('---------------------')
+
+    cf or (f, t)
+    st rf or_res is or result
+# print ('or result of 0-1: ', or_res)
+
+    cf or (t, f)
+    st rf or_res is or result
+# print ('or result of 1-0: ', or_res)
+
+    cf or (f, f)
+    st rf or_res is or result
+# print ('or result of 0-0: ', or_res)
+
+    cf or (t, t)
+    st rf or_res is or result
+# print ('or result of 1-1: ', or_res)
+
+# print ('---------------------')
+
+    cf not (t)
+    st rf not_res is not result
+# print ('not result t: ', not_res)
+
+    cf not (f)
+    st rf not_res is not result
+# print ('not result f: ', not_res)
+
+# print ('---------------------')
+
+    cf xor (f, t)
+    st rf xor_res is xor result
+# print ('xor result of 0-1: ', xor_res)
+
+    cf xor (t, f)
+    st rf xor_res is xor result
+# print ('xor result of 1-0: ', xor_res)
+
+    cf xor (f, f)
+    st rf xor_res is xor result
+# print ('xor result of 0-0: ', xor_res)
+
+    cf xor (t, t)
+    st rf xor_res is xor result
+# print ('xor result of 1-1: ', xor_res)
+
+# print ('---------------------')
+
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+    cf dinc (nrs)
+    st rf nrs is dinc result
+# print ('nr: ', nrs)
+
+# print ('---------------------')
+
+ff bw (i)
+    st bx .a is i
+    # print ('bw.')
+
+ff main(args)
+    # print (args)
+    if 'blablabla' in args
+    cf bw(args)
+    st rf _ is bw .a
+    oif
+
+ff swap(x, y)
+    st bx last_x is x
+    st bx last_y is y
+    st bx x is last_y
+    st bx y is last_x
